@@ -1,0 +1,29 @@
+{
+  "name": "transfer_to_human",
+  "description": "Escalate the caller to a human support specialist.",
+  "type": "function",
+  "server": {
+    "url": "https://latoria-cabbagy-aylin.ngrok-free.dev/support/transfer",
+    "method": "POST"
+  },
+  "parameters": {
+    "type": "object",
+    "properties": {
+      "reason": {
+        "type": "string",
+        "description": "Reason for escalation to human support."
+      },
+      "customer_phone": {
+        "type": "string",
+        "description": "Optional customer phone number."
+      },
+      "order_name": {
+        "type": "string",
+        "description": "Optional order number if provided by customer."
+      }
+    },
+    "required": [
+      "reason"
+    ]
+  }
+}

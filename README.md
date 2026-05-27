@@ -34,7 +34,7 @@ A FastAPI-based backend for the Janki AI voice support agent. This project power
 1. Clone the repo:
 
 ```powershell
-git clone <your-repo-url>
+git clone https://github.com/BIT-PYRO/Janki-Agent.git
 cd janki-ai-backend
 ```
 
@@ -147,10 +147,10 @@ git add .
 git commit -m "Initial commit"
 ```
 
-Then create a repository on GitHub and push:
+Then push to the GitHub repository:
 
 ```powershell
-git remote add origin https://github.com/<your-username>/janki-ai-backend.git
+git remote set-url origin https://github.com/BIT-PYRO/Janki-Agent.git
 git branch -M main
 git push -u origin main
 ```

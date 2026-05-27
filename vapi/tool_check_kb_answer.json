@@ -1,0 +1,25 @@
+{
+  "name": "check_kb_answer",
+  "description": "Look up the best customer support answer from Janki Jewels knowledge base.",
+  "type": "function",
+  "server": {
+    "url": "https://latoria-cabbagy-aylin.ngrok-free.dev/support/kb/ask-vapi",
+    "method": "POST"
+  },
+  "parameters": {
+    "type": "object",
+    "properties": {
+      "question": {
+        "type": "string",
+        "description": "Customer question from the live call."
+      },
+      "caller_phone": {
+        "type": "string",
+        "description": "Optional caller phone number in E.164 format."
+      }
+    },
+    "required": [
+      "question"
+    ]
+  }
+}
